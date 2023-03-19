@@ -1,0 +1,68 @@
+section {
+  width: 70vw;
+  height: 80vh;
+  position: absolute;
+  top: 10%;
+  margin-left: 15%;
+  overflow-y: scroll;
+  box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.2), 0 20px 28px 0 rgba(0, 0, 0, 0.19);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside {
+  position: sticky;
+  width: 45%;
+  height: 100%;
+  margin: 0%;
+  float: right;
+  top: 0%;
+}
+
+aside img {
+  height: 100%;
+  width: 100%;
+}
+
+#form_details {
+  padding: 5%;
+  height: auto;
+}
+
+input{
+    line-height: 2;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    cursor: pointer;
+}
+select{
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin:-left: 15%
+    cursor: pointer;
+    width: 20%;
+}
+p{
+    line-height: 1;
+}
+.line{
+    margin-top: 10px;
+}
+#buttons {
+  margin-top: 20px;
+  position: absolute;
+  display: inline-block;
+  bottom: 1%;
+  left: 40%;
+}
+
+#buttons button {
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(200, 25, 250);
+  border-radius: 2px;
+  font-size: 20px;
+}

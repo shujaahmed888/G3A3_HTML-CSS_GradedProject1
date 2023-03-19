@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+}
+
+header h1 {
+  margin: 0%;
+  padding: 2% 5%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
+
+.menu-nav {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  text-align: left;
+}
+
+.nav-link {
+  margin: 0%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.nav-link li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-link li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-link li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link li:nth-child(2):hover #dropdown,
+.nav-link li:nth-child(3):hover #dropdown {
+  display: block;
+}
+
+#dropdown {
+  position: absolute;
+  width: auto;
+  min-width: 120px;
+  max-width: 150px;
+  display: none;
+  top: 42.75px;
+  background-color: whitesmoke;
+  padding: 0%;
+}
+
+#dropdown li {
+  display: block;
+}
+
+#dropdown li:hover {
+  background-color: gainsboro;
+}
+
+#dropdown li a {
+  color: steelblue;
+  font-size: 16px;
+}
+
+#animation,
+#covid-care,
+#diabetes-care {
+  display: block;
+  margin: 1.5% 0%;
+}
+
+#animation img,
+#covid-care img,
+#diabetes-care img {
+  max-height: 550px;
+}
+
+#animation {
+  position: relative;
+  height: 500px;
+}
+
+#animation>* {
+  visibility: hidden;
+  position: absolute;
+  animation: autoplay 10s infinite;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 500px;
+  border: 2px solid steelblue;
+  padding: 0.5%;
+  z-index: -1;
+}
+
+@keyframes autoplay {
+  0% {
+    visibility: visible;
+  }
+
+  20% {
+    visibility: hidden;
+  }
+}
+
+#animation>*:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#animation>*:nth-child(2) {
+  animation-delay: 2s;
+}
+
+#animation>*:nth-child(3) {
+  animation-delay: 4s;
+}
+
+#animation>*:nth-child(4) {
+  animation-delay: 6s;
+}
+
+#animation>*:nth-child(5) {
+  animation-delay: 8s;
+}
+
+
+section p {
+  text-align: left;
+}
+
+section p {
+  color: lightseagreen;
+}
+
+#covid-care,
+#diabetes-care,
+div {
+  text-align: center;
+}
+
+.product {
+  position: relative;  
+  background-color: rgb(250, 250, 250);
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  width: 250px;
+  height: 280px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product h1 {
+  font-size: 18px;
+}
+
+.product img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.cast {
+  min-width: 20px;
+  min-height: 50px;
+}
+
+.product button {
+  color: rgb(210, 80, 40);
+  background-color: rgb(170, 220, 240);
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  width: 90%;
+  padding: 2%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product:hover {
+  width: 270px;
+  height: 300px;
+}
+
+.product button:focus {
+  background-color: rgb(250, 234, 230);
+  border: 2px solid rgb(0, 255, 76);
+}
